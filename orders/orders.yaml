@@ -48,8 +48,6 @@ spec:
         labelSelector:
           matchLabels:
             app: orders
-      nodeSelector:
-        managedBy: karpenter
       containers:
         - name: envoy
           image: envoyproxy/envoy:v1.25.7
